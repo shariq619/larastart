@@ -3,16 +3,81 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b58dad85-e082-46bf-8f08-62c61016ed18" name="Default Changelist" comment="" />
+    <list default="true" id="b58dad85-e082-46bf-8f08-62c61016ed18" name="Default Changelist" comment="Add spatie package">
+      <change afterPath="$PROJECT_DIR$/app/Mail/SendUserEmail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/permissions/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/emails/usermail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/larastart.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/larastart.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/AdminLTELogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/avatar04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/avatar2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/avatar3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/avatar5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/boxed-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/boxed-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/credit/american-express.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/credit/cirrus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/credit/mastercard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/credit/mestro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/credit/paypal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/credit/paypal2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/credit/visa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/default-150x150.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/photo1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/photo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/photo3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/photo4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/prod-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/prod-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/prod-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/prod-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/prod-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/user1-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/user2-160x160.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/user3-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/user4-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/user5-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/user6-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/user7-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/user8-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -119,27 +184,33 @@
       <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
       <path value="$PROJECT_DIR$/vendor/laravel/framework" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-permission" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ixMX3AnNphZiZU5SYirUSz7urX" />
+  <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/permissions" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\larastart\resources\views\admin\permissions" />
       <recent name="C:\laragon\www\larastart\resources\views\admin" />
       <recent name="C:\laragon\www\larastart\resources\views\admin\auth" />
       <recent name="C:\laragon\www\larastart\resources\views\admin\layouts" />
       <recent name="C:\laragon\www\larastart\app\Http\Controllers\Admin" />
-      <recent name="C:\laragon\www\larastart\app\Http\Controllers\Admin\Auth" />
     </key>
   </component>
   <component name="RunManager">
@@ -148,7 +219,10 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b58dad85-e082-46bf-8f08-62c61016ed18" name="Default Changelist" comment="" />
@@ -156,25 +230,59 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602844825830</updated>
-      <workItem from="1602844826948" duration="12909000" />
+      <workItem from="1602844826948" duration="13404000" />
+      <workItem from="1602859388609" duration="1026000" />
+      <workItem from="1603712409135" duration="8261000" />
     </task>
+    <task id="LOCAL-00001" summary="Add spatie package">
+      <created>1603720410503</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603720410503</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add spatie package" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add spatie package" />
   </component>
   <component name="WindowStateProjectService">
     <state width="498" height="446" key="SwitcherDM" timestamp="1602848167811">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1440.860@0.0.1440.860" timestamp="1602848167811" />
+    <state x="312" y="163" key="Vcs.Push.Dialog.v2" timestamp="1603720412228">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="312" y="163" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1603720412228" />
     <state x="92" y="92" width="1256" height="676" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1602857463760">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="92" y="92" width="1256" height="676" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.860@0.0.1440.860" timestamp="1602857463759" />
-    <state x="383" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1602852008341">
+    <state x="537" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602860330712">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="383" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1602852008341" />
+    <state x="537" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.860@0.0.1440.860" timestamp="1602860330712" />
+    <state x="383" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1603723742527">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="383" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1603723742527" />
   </component>
 </project>
