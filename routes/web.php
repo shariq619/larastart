@@ -25,7 +25,9 @@ Route::namespace("Admin")->prefix('admin')->group(function () {
 
     Route::get('/', 'HomeController@index')->name('admin.home');
 
-    Route::resource('permission','PermissionController');
+    Route::resource('permissions','PermissionController');
+    Route::resource('roles','RoleController');
+    Route::resource('users','UserController');
 
     Route::namespace('Auth')->group(function () {
         Route::get('/login', 'AdminLoginController@showLoginForm')->name('admin.login');

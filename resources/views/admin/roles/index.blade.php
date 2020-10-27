@@ -8,7 +8,7 @@
                     <span class="info-box-icon bg-success"><i class="far fa-flag"></i></span>
 
                     <div class="info-box-content">
-                        <span class="info-box-text">Total Permissions</span>
+                        <span class="info-box-text">Total Roles</span>
                         <span class="info-box-number">{{$total}}</span>
                     </div>
                     <!-- /.info-box-content -->
@@ -26,10 +26,10 @@
                 <div class="card card-primary card-outline">
                     <div class="card-header">
                         <h3 class="card-title float-right">
-                            <a href="{{route('permissions.create')}}" class="btn btn-primary">Add Permission</a>
+                            <a href="{{route('roles.create')}}" class="btn btn-primary">Add Role</a>
                         </h3>
                         <h3 class="card-title float-left">
-                            Permissions
+                            Roles
                         </h3>
                     </div>
                     <!-- /.card-header -->
@@ -43,20 +43,20 @@
                             </tr>
                             </thead>
                             <tbody>
-                            @forelse($permissions as $permission)
+                            @forelse($roles as $role)
                                 <tr>
-                                    <td>{{$permission->id}}</td>
-                                    <td>{{$permission->name}}</td>
+                                    <td>{{$role->id}}</td>
+                                    <td>{{$role->name}}</td>
                                     <td class="text-center">
                                         <a class="btn btn-xs btn-primary"
-                                           href="{{route('permissions.show',$permission->id)}}">
+                                           href="{{route('roles.show',$role->id)}}">
                                             View
                                         </a>
                                         <a class="btn btn-xs btn-info"
-                                           href="{{route('permissions.edit',$permission->id)}}">
+                                           href="{{route('roles.edit',$role->id)}}">
                                             Edit
                                         </a>
-                                        <form action="{{route('permissions.destroy',$permission->id)}}" method="POST"
+                                        <form action="{{route('roles.destroy',$role->id)}}" method="POST"
                                               onsubmit="return confirm('Are you sure?');"
                                               style="display: inline-block;">
                                             @method('DELETE')
@@ -67,7 +67,7 @@
                                 </tr>
                             @empty
                                 <tr>
-                                    <td colspan="3" class="text-center">No Permissions Found!</td>
+                                    <td colspan="3" class="text-center">No Roles Found!</td>
                                 </tr>
                             @endforelse
                             </tbody>
