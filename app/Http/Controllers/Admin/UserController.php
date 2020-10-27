@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Admin\AdminModel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\View;
+use Spatie\Permission\Models\Role;
 
 class UserController extends Controller
 {
@@ -34,7 +35,8 @@ class UserController extends Controller
      */
     public function create()
     {
-        return view('admin.roles.create');
+        $roles = Role::all();
+        return view('admin.users.create',compact('roles'));
     }
 
     /**
@@ -46,10 +48,18 @@ class UserController extends Controller
     public function store(Request $request)
     {
         $data = $request->validate([
-            'name' => 'required'
+            'name' => 'required',
+            'email' => 'required',
+            'password' => 'required|min:6|confirmed'
         ]);
-        $role = Role::create($data);
-        return redirect()->back()->with('message', 'Role Added');
+        $user = AdminModel::create($data);
+
+        AdminModel::$guard_name = 'admin';
+        // Assign roles
+        $roles = $request->input('roles');
+        $user->assignRole($roles);
+
+        return redirect()->back()->with('message', 'User Added');
     }
 
     /**
@@ -60,8 +70,8 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        $role = Role::find($id);
-        return view('admin.roles.show',compact('role'));
+        $user = AdminModel::find($id);
+        return view('admin.users.show',compact('user'));
     }
 
     /**
@@ -72,8 +82,8 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        $role = Role::find($id);
-        return view('admin.roles.edit',compact('role'));
+        $user = AdminModel::find($id);
+        return view('admin.users.edit',compact('user'));
     }
 
     /**
@@ -88,9 +98,9 @@ class UserController extends Controller
         $data = $request->validate([
             'name' => 'required'
         ]);
-        $role = Role::find($id);
+        $role = AdminModel::find($id);
         $role->update($data);
-        return redirect()->route('roles.index')->with('message', 'Role Updated Successfully');
+        return redirect()->route('users.index')->with('message', 'User Updated Successfully');
     }
 
     /**
@@ -101,8 +111,8 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        $role = Role::find($id);
+        $role = AdminModel::find($id);
         $role->delete();
-        return redirect()->route('roles.index')->with('message', 'Role Deleted Successfully');
+        return redirect()->route('users.index')->with('message', 'User Deleted Successfully');
     }
 }

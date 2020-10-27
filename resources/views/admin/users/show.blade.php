@@ -7,7 +7,7 @@
                 <div class="card card-primary card-outline">
                     <div class="card-header">
                         <h3 class="card-title">
-                            Show Role
+                            Show User
                         </h3>
                     </div>
                     <!-- /.card-header -->
@@ -17,20 +17,20 @@
                                 <thead>
                                 <tr>
                                     <th style="width: 10px">ID</th>
-                                    <th>{{$role->id}}</th>
+                                    <th>{{$user->id}}</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
                                     <td>Name</td>
-                                    <td>{{$role->name}}</td>
+                                    <td>{{$user->name}}</td>
                                 </tr>
                                 </tbody>
                             </table>
                         </div>
                         <!-- /.card-body -->
                         <div class="card-footer">
-                            <a href="{{route('roles.index')}}"  class="btn btn-secondary">Back</a>
+                            <a href="{{route('users.index')}}"  class="btn btn-secondary">Back</a>
                         </div>
                     </div>
                     <!-- /.card-body -->

@@ -29,6 +29,16 @@
                                     </span>
                                     @enderror
                                 </div>
+                                <div class="form-group">
+                                    <label>Permissions</label>
+                                    <select class="select2" name="permissions[]" multiple="multiple" data-placeholder="Select a Role"
+                                            style="width: 100%;">
+                                        @forelse($permissions as $permission)
+                                            <option value="{{$permission->id}}">{{$permission->name}}</option>
+                                        @empty
+                                        @endforelse
+                                    </select>
+                                </div>
                             </div>
                             <!-- /.card-body -->
                             <div class="card-footer">
@@ -46,3 +56,12 @@
         <!-- /.row -->
     </div>
 @endsection
+
+@push('scripts')
+    <script>
+        $(function () {
+            //Initialize Select2 Elements
+            $('.select2').select2()
+        })
+    </script>
+@endpush

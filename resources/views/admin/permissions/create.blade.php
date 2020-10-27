@@ -35,6 +35,7 @@
                                 <button type="submit" class="btn btn-primary">Submit</button>
                                 <a href="{{route('permissions.index')}}"  class="btn btn-secondary">Back</a>
                             </div>
+                            <input type="hidden"  name="guard_name" value="admin" >
                         </form>
                     </div>
                     <!-- /.card-body -->
@@ -46,3 +47,4 @@
         <!-- /.row -->
     </div>
 @endsection
+

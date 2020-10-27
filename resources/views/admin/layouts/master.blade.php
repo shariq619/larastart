@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}">
     <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css')}}">
 
+    <!-- Select 2 -->
+    <link rel="stylesheet" href="{{ asset('plugins/select2/css/select2.min.css')}}">
+
     <link rel="stylesheet" href="/css/app.css/">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
@@ -278,6 +281,8 @@
 <script src="{{asset('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js')}}"></script>
 <script src="{{asset('plugins/datatables-responsive/js/dataTables.responsive.min.')}}js"></script>
 <script src="{{asset('plugins/datatables-responsive/js/responsive.bootstrap4.min.js')}}"></script>
+<!-- Select 2 -->
+<script src="{{asset('plugins/select2/js/select2.full.min.js')}}"></script>
 
 @stack('scripts')
 

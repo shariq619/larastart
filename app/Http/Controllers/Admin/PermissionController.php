@@ -48,6 +48,7 @@ class PermissionController extends Controller
         $data = $request->validate([
             'name' => 'required'
         ]);
+        $data['guard_name'] = 'admin';
         $permission = Permission::create($data);
         return redirect()->back()->with('message', 'Permission Added');
     }
@@ -89,6 +90,7 @@ class PermissionController extends Controller
             'name' => 'required'
         ]);
         $permission = Permission::find($id);
+        $data['guard_name'] = 'admin';
         $permission->update($data);
         return redirect()->route('permissions.index')->with('message', 'Permission Updated Successfully');
     }

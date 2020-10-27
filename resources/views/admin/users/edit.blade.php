@@ -12,18 +12,18 @@
                 <div class="card card-primary card-outline">
                     <div class="card-header">
                         <h3 class="card-title">
-                            Edit Role
+                            Edit User
                         </h3>
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">
-                        <form role="form" action="{{route('roles.update',$role->id)}}" method="post">
+                        <form role="form" action="{{route('users.update',$user->id)}}" method="post">
                             @csrf
                             @method('PUT')
                             <div class="card-body">
                                 <div class="form-group">
                                     <label for="name">Name<code>*</code></label>
-                                    <input type="text" class="form-control" name="name" value="{{$role->name}}" id="name" placeholder="Enter Name">
+                                    <input type="text" class="form-control" name="name" value="{{$user->name}}" id="name" placeholder="Enter Name">
                                     @error('name')
                                     <span class="text-danger" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -34,7 +34,7 @@
                             <!-- /.card-body -->
                             <div class="card-footer">
                                 <button type="submit" class="btn btn-primary">Update</button>
-                                <a href="{{route('roles.index')}}"  class="btn btn-secondary">Back</a>
+                                <a href="{{route('users.index')}}"  class="btn btn-secondary">Back</a>
                             </div>
                         </form>
                     </div>

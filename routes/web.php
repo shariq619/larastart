@@ -35,3 +35,13 @@ Route::namespace("Admin")->prefix('admin')->group(function () {
         Route::post('/logout', 'AdminLoginController@logout')->name('admin.logout');
     });
 });
+
+/*
+function wc_shop_demo_button() {
+    $product = get_product(get_the_ID());
+    $category_id = $product->category_ids;
+    $category_link = get_category_link( $category_id[0] );
+    echo '<a class="button demo_button" style="padding-right: 0.75em;padding-left: 0.75em;margin-left: 8px; background-color: #0ebc30;" href="'.$category_link.'" target="_blank">View Demo</a>';
+}
+//add_action( 'woocommerce_after_shop_loop_item', 'wc_shop_demo_button', 20 );
+add_action( 'woocommerce_after_add_to_cart_button', 'wc_shop_demo_button', 20 );*/

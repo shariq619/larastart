@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\View;
+use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
 
 class RoleController extends Controller
@@ -35,7 +36,8 @@ class RoleController extends Controller
      */
     public function create()
     {
-        return view('admin.roles.create');
+        $permissions = Permission::all();
+        return view('admin.roles.create',compact('permissions'));
     }
 
     /**
@@ -49,7 +51,14 @@ class RoleController extends Controller
         $data = $request->validate([
             'name' => 'required'
         ]);
+        $data['guard_name'] = 'admin';
         $role = Role::create($data);
+
+        //
+        $permissions = $request->input('permissions');
+        $role->syncPermissions($permissions);
+
+
         return redirect()->back()->with('message', 'Role Added');
     }
 
@@ -74,7 +83,10 @@ class RoleController extends Controller
     public function edit($id)
     {
         $role = Role::find($id);
-        return view('admin.roles.edit',compact('role'));
+        $all_permissions = Permission::all();
+        $perm = $role->getAllPermissions();
+        $permissions = $perm->pluck('id')->toArray();
+        return view('admin.roles.edit',compact('role','all_permissions','permissions'));
     }
 
     /**
@@ -90,7 +102,12 @@ class RoleController extends Controller
             'name' => 'required'
         ]);
         $role = Role::find($id);
+        $data['guard_name'] = 'admin';
         $role->update($data);
+
+        $permissions = $request->input('permissions');
+        $role->syncPermissions($permissions);
+
         return redirect()->route('roles.index')->with('message', 'Role Updated Successfully');
     }
 
