@@ -23,48 +23,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b58dad85-e082-46bf-8f08-62c61016ed18" name="Default Changelist" comment="Add spatie package">
-      <change afterPath="$PROJECT_DIR$/app/Mail/SendUserEmail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/permissions/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/emails/usermail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/larastart.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/larastart.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminAdController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminBadgeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Admin/AdminAd.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Admin/AdminBadge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_24_171140_create_admin_ads_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_24_171617_create_admin_badges_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/ads/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/ads/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/ads/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/ads/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/badges/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/badges/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/badges/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/badges/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/AdminLTELogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/avatar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/avatar04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/avatar2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/avatar3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/avatar5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/boxed-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/boxed-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/credit/american-express.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/credit/cirrus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/credit/mastercard.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/credit/mestro.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/credit/paypal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/credit/paypal2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/credit/visa.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/default-150x150.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/icons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/photo1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/photo2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/photo3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/photo4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/prod-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/prod-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/prod-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/prod-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/prod-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/user1-128x128.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/user2-160x160.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/user3-128x128.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/user4-128x128.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/user5-128x128.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/user6-128x128.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/user7-128x128.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/user8-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/Auth/AdminLoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Auth/AdminLoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminHomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -200,17 +183,26 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/permissions" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\laragon\www\larastart\app\Models\Admin" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\laragon\www\larastart\resources\views\admin" />
+      <recent name="D:\laragon\www\larastart\app\Http\Controllers\Admin" />
+      <recent name="D:\laragon\www\larastart" />
       <recent name="C:\laragon\www\larastart\resources\views\admin\permissions" />
       <recent name="C:\laragon\www\larastart\resources\views\admin" />
-      <recent name="C:\laragon\www\larastart\resources\views\admin\auth" />
-      <recent name="C:\laragon\www\larastart\resources\views\admin\layouts" />
-      <recent name="C:\laragon\www\larastart\app\Http\Controllers\Admin" />
     </key>
   </component>
   <component name="RunManager">
@@ -233,6 +225,7 @@
       <workItem from="1602844826948" duration="13404000" />
       <workItem from="1602859388609" duration="1026000" />
       <workItem from="1603712409135" duration="8261000" />
+      <workItem from="1611501963547" duration="11303000" />
     </task>
     <task id="LOCAL-00001" summary="Add spatie package">
       <created>1603720410503</created>
@@ -264,25 +257,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="Add spatie package" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="498" height="446" key="SwitcherDM" timestamp="1602848167811">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state x="562" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1611505671069">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1440.860@0.0.1440.860" timestamp="1602848167811" />
+    <state x="562" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1600.860@0.0.1600.860" timestamp="1611505671069" />
+    <state x="530" y="185" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1611512721405">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="530" y="185" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1600.860@0.0.1600.860" timestamp="1611512721405" />
     <state x="312" y="163" key="Vcs.Push.Dialog.v2" timestamp="1603720412228">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="312" y="163" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1603720412228" />
-    <state x="92" y="92" width="1256" height="676" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1602857463760">
-      <screen x="0" y="0" width="1440" height="860" />
-    </state>
-    <state x="92" y="92" width="1256" height="676" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.860@0.0.1440.860" timestamp="1602857463759" />
-    <state x="537" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602860330712">
-      <screen x="0" y="0" width="1440" height="860" />
-    </state>
-    <state x="537" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.860@0.0.1440.860" timestamp="1602860330712" />
-    <state x="383" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1603723742527">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state x="426" y="180" width="747" height="678" key="search.everywhere.popup" timestamp="1611509420550">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="383" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1603723742527" />
+    <state x="426" y="180" width="747" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1611509420550" />
   </component>
 </project>

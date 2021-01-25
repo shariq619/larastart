@@ -12,18 +12,17 @@
                 <div class="card card-primary card-outline">
                     <div class="card-header">
                         <h3 class="card-title">
-                            Create User
+                            Create Ad/Banner
                         </h3>
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">
-                        <form role="form" action="{{route('users.store')}}" method="post">
+                        <form role="form" action="{{route('ads.store')}}" method="post" enctype="multipart/form-data">
                             @csrf
                             <div class="card-body">
                                 <div class="form-group">
-                                    <label for="name">Name<code>*</code></label>
-                                    <input type="text" class="form-control" value="{{old('name')}}" name="name"
-                                           id="name" placeholder="Enter Name">
+                                    <label for="name">Ad/Banner Name<code>*</code></label>
+                                    <input type="text" class="form-control" name="name" id="name" placeholder="Enter Name">
                                     @error('name')
                                     <span class="text-danger" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -31,45 +30,37 @@
                                     @enderror
                                 </div>
                                 <div class="form-group">
-                                    <label for="email">Email<code>*</code></label>
-                                    <input type="email" class="form-control" value="{{old('email')}}" name="email"
-                                           id="email" placeholder="Enter Email">
-                                    @error('email')
+                                    <label for="image">Ad/Banner Image<code>*</code></label>
+                                    <input type="file" class="form-control" name="image" id="image">
+                                    @error('image')
                                     <span class="text-danger" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                     @enderror
                                 </div>
                                 <div class="form-group">
-                                    <label for="password">Password<code>*</code></label>
-                                    <input type="password" class="form-control" name="password" id="password"
-                                           placeholder="Enter Password">
-                                    @error('password')
-                                    <span class="text-danger" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                    @enderror
+                                    <label for="url">Ad/Banner URL</label>
+                                    <input type="text" class="form-control" name="url" id="url">
                                 </div>
                                 <div class="form-group">
-                                    <label for="password_confirmation">Confirm Password<code>*</code></label>
-                                    <input type="password" class="form-control" name="password_confirmation"
-                                           id="password_confirmation" placeholder="Enter Confirm Password">
-                                </div>
-                                {{--<div class="form-group">
-                                    <label>Roles</label>
-                                    <select class="select2" name="roles[]" multiple="multiple" data-placeholder="Select a Role"
+                                    <label>Ad/Banner Type</label>
+                                    <select class="select2" name="type"  data-placeholder="Select a type"
                                             style="width: 100%;">
-                                        @forelse($roles as $role)
-                                            <option value="{{$role->id}}">{{$role->name}}</option>
-                                        @empty
-                                        @endforelse
+                                            <option value="Event">Event</option>
+                                            <option value="Brand">Brand</option>
+                                            <option value="Feature">Feature</option>
                                     </select>
-                                </div>--}}
+                                    @error('type')
+                                    <span class="text-danger" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                    @enderror
+                                </div>
                             </div>
                             <!-- /.card-body -->
                             <div class="card-footer">
                                 <button type="submit" class="btn btn-primary">Submit</button>
-                                <a href="{{route('users.index')}}" class="btn btn-secondary">Back</a>
+                                <a href="{{route('ads.index')}}"  class="btn btn-secondary">Back</a>
                             </div>
                         </form>
                     </div>
