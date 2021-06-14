@@ -55,7 +55,7 @@
                                     <input type="password" class="form-control" name="password_confirmation"
                                            id="password_confirmation" placeholder="Enter Confirm Password">
                                 </div>
-                                {{--<div class="form-group">
+                                <div class="form-group">
                                     <label>Roles</label>
                                     <select class="select2" name="roles[]" multiple="multiple" data-placeholder="Select a Role"
                                             style="width: 100%;">
@@ -64,7 +64,7 @@
                                         @empty
                                         @endforelse
                                     </select>
-                                </div>--}}
+                                </div>
                             </div>
                             <!-- /.card-body -->
                             <div class="card-footer">

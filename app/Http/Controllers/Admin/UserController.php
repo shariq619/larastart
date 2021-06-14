@@ -12,7 +12,6 @@ class UserController extends Controller
 {
     public function __construct()
     {
-        //$this->middleware('auth:admin');
         $users = AdminModel::all();
         // Sharing is caring
         View::share('total', $users->count());
@@ -55,10 +54,10 @@ class UserController extends Controller
         ]);
         $user = AdminModel::create($data);
 
-        //AdminModel::$guard_name = 'admin';
+        AdminModel::$guard_name = 'admin';
         // Assign roles
-        //$roles = $request->input('roles');
-        //$user->assignRole($roles);
+        $roles = $request->input('roles');
+        $user->assignRole($roles);
 
         return redirect()->back()->with('message', 'User Added');
     }

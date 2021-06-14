@@ -34,7 +34,7 @@ class AdminLoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/admin/dashboard';
+    protected $redirectTo = '/admin/users';
     //protected $redirectTo = RouteServiceProvider::HOME;
 
     /**
